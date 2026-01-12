@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2 class="logo">ModernShoes</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<section id="home" class="hero">
+    <h1>Step Into Modern Style</h1>
+    <p>Premium shoes for modern lifestyles</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        Modern Shoes is a stylish footwear brand focused on comfort,
+        quality, and modern design. We bring you the latest shoe trends
+        at affordable prices.
+    </p>
+</section>
+
+<!-- Services -->
+<section id="services" class="section gray">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">Quality Shoes</div>
+        <div class="service">Fast Delivery</div>
+        <div class="service">Affordable Prices</div>
+    </div>
+</section>
+
+<!-- Shop -->
+<section id="shop" class="section">
+    <h2>Shop Shoes</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="jordan.jpeg"height="200" width="300"alt="Jordan">
+            <h3>AirFlex</h3>
+            <p>Ksh 3,500</p>
+            <button onclick="addToCart(3500)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="UrbanStep.jpeg" height="200" width="300"alt="UrbanStep">
+            <h3>UrbanStep</h3>
+            <p>Ksh 4,200</p>
+            <button onclick="addToCart(4200)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="converse.jpeg"height="200" width="300" alt="converse">
+            <h3>StreetMax</h3>
+            <p>Ksh 5,000</p>
+            <button onclick="addToCart(5000)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <p>Items: <span id="count">0</span></p>
+        <p>Total: Ksh <span id="total">0</span></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section gray">
+    <h2>Contact Us</h2>
+    <p>Email: modernshoes@email.com</p>
+    <p>Phone: +254 700 000 000</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Modern Shoes</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
